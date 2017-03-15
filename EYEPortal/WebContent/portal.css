@@ -1,0 +1,307 @@
+@charset "utf-8";
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #FFFFFF;
+}
+#container {
+	width: 1100px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	background-color: #FFFFFF;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*border-top-width: 0px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	border-bottom-width: 0px;*/
+} 
+
+#header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 5px 0px; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+#sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px;
+	background-color: #FFFFFF;
+	background-repeat: repeat-y;
+}
+#mainContent {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 80px;
+	padding-bottom: 0;
+	padding-left: 80px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: justify;
+} 
+#footer p a {
+	text-align: center;
+}
+
+#sitemap {
+	width: 300px;
+	margin-right: 0px;
+	margin-left: 100px;
+}
+#mainContent h2 {
+	font-size: 20px;
+	color: #00b3b3;
+	text-align:left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#mainContent h6 a {
+	font-size: 16px;
+	color: #000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+#mainContent h6 a:link {
+	font-size: 16px;
+	color: #000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+#mainContent h6 a:visited {
+	font-size: 16px;
+	color: #000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#mainContent ul li h6 {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+}
+#sitemap ul li {
+	line-height: 0%;
+}
+
+
+#mainContent h4 a {
+	color: #00b3b3;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	font-weight: normal;
+	float: right;
+	font-size: 16px;
+}
+
+
+#container #mainContent p a {
+	color: #000;
+	text-decoration: underline;
+	font-weight: normal;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#about {
+	width: 500px;
+	margin-left: 100px;
+	text-align: justify;
+}
+
+
+
+#footer {
+	position: relative;
+	background-color: #00b3b3;
+	background-repeat: repeat;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 70px;
+} 
+#footer p {
+	margin: 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	color: #FFF;
+	background-color: #00b3b3;
+	font-size: 13px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+
+.center {
+	text-align: center;
+}
+
+
+
+.floatright { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+
+.floatleft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear: both;
+	height: 0;
+	font-size: 12px;
+	line-height: 0px;
+}
+
+#navigation {
+	background-position: right top;
+	text-align: center;
+	background-color: #00b3b3;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	
+}
+#navigation a{
+	padding: 0px 50px;
+}
+
+#description{
+	font-size: 12px;
+}
+a:link {
+	font-weight: bolder;
+	color: #FFF;
+	text-decoration: none;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+}
+
+#navigation a.current {
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+	display: inline-block;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00b3b3;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+	font-size:14px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: black;
+}
+
+.button {
+    border: none;
+	border-radius: 4px;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	background-color: #00b3b3;
+	font-size: 14px;
+}
+
+.feedback{
+	color: red;
+}
+
+input[type="text"]
+{
+    font-size:15px;
+}
+
+input[type="password"]
+{
+    font-size:15px;
+}
+
+#author{
+	font-size:12px;
+	color: green;
+}
+
+#title{
+	font-size:18px;
+	font-weight:bold;
+}
